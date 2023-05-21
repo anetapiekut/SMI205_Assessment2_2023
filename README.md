@@ -31,20 +31,23 @@ Aneta Piekut
 
 # 1. Replication report - template
 
-Edit `SMI205_Assessment2_Template` by adding pieces of your work into
-it. It is a template prepared to help you to write a transparent
+Edit `SMI205_Assessment2_Template.Rmd` by adding pieces of your work
+into it. It is a template prepared to help you to write a transparent
 research report. Your job is to make your research fully reproducible.
 
-Publish it on as a reproducible report on Rpubs and create project
-repository on Github (optional).
+Publish it as a reproducible report on [Rpubs.com](https://rpubs.com/)
+website and create a project repository on Github (optional).
 
-> Use you student number to name your Rpubs and Github accounts so your
+> Use your student number to name your Rpubs and Github accounts so your
 > work is anonymous.
+
+As any template, it can be improved, so go on and make edits so your
+report is even more transparent.
 
 ## 1.1. Your Workflow
 
-As with other project, organise your work transparently into a hierarchy
-of folders.
+As with other projects, organise your work transparently into a
+hierarchy of folders.
 
 Project TIER Protocol 4.0
 (<https://www.projecttier.org/tier-protocol/protocol-4-0/>) offers an
@@ -53,8 +56,8 @@ documentation for a project based on quantitative methods.
 
 ## 1.2. Re-publishing data and code
 
-You should not be republishing data that you have not created or edited
-to creat a new version of a dataset.
+You should not be republishing data that you have not created or
+substantially edited to create a new version of a dataset.
 
 > Check what is the licence of the data and code:
 > <https://www.sheffield.ac.uk/library/copyright/licences>. It might be
@@ -67,7 +70,7 @@ researchers.
 
 # 2. Rpubs version of the template
 
-Rpubs version of the template is published here:
+HTML version of the template is published here:
 <https://rpubs.com/AnetaPiekut/SMI205_Assessment2_2023_template>
 
 # 3. `renv` package

@@ -17,21 +17,23 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # 1. Replication report - template
 
-Edit `SMI205_Assessment2_Template` by adding pieces of your work into it. It is a template prepared to help you to write a transparent research report. Your job is to make your research fully reproducible.
+Edit `SMI205_Assessment2_Template.Rmd` by adding pieces of your work into it. It is a template prepared to help you to write a transparent research report. Your job is to make your research fully reproducible.
 
-Publish it on as a reproducible report on Rpubs and create project repository on Github (optional).
+Publish it as a reproducible report on [Rpubs.com](https://rpubs.com/) website and create a project repository on Github (optional).
 
-> Use you student number to name your Rpubs and Github accounts so your work is anonymous.
+> Use your student number to name your Rpubs and Github accounts so your work is anonymous.
+
+As any template, it can be improved, so go on and make edits so your report is even more transparent. 
 
 ## 1.1. Your Workflow 
 
-As with other project, organise your work transparently into a hierarchy of folders.
+As with other projects, organise your work transparently into a hierarchy of folders.
 
 Project TIER Protocol 4.0 (https://www.projecttier.org/tier-protocol/protocol-4-0/) offers an excellent guide for what to include and how to organise reproduction documentation for a project based on quantitative methods.
 
 ## 1.2. Re-publishing data and code
 
-You should not be republishing data that you have not created or edited to creat a new version of a dataset. 
+You should not be republishing data that you have not created or substantially edited to create a new version of a dataset. 
 
 > Check what is the licence of the data and code: https://www.sheffield.ac.uk/library/copyright/licences. It might be the licence allows remixing, tweaking, and building upon others work non-commercially. 
 
@@ -39,7 +41,7 @@ If you found a replication package for your chosen paper, remember to credit the
 
 # 2. Rpubs version of the template
 
-Rpubs version of the template is published here:
+HTML version of the template is published here:
 https://rpubs.com/AnetaPiekut/SMI205_Assessment2_2023_template
 
 # 3. `renv` package
