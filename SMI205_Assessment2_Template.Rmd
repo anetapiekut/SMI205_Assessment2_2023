@@ -1,0 +1,171 @@
+---
+title: "SMI205 Replication Project (2023)"
+author: "Your Student ID/number"
+date: "22/05/2023"
+output: 
+  html_document: 
+    code_download: true
+    toc: true
+    toc_depth: 2
+    toc_float: 
+      collapsed: false
+      smooth_scroll: true
+---
+
+```{r start, include=FALSE}
+# Opening key libraries first
+library(rmarkdown)
+library(knitr)
+```
+
+# [Project title here]
+
+### Rpubs link: [copy Rpubs url address here]
+### GitHub Repository: [add url here if you have created a data or code repository, if not delete this line]
+### Study Preregistration form: [copy Rpubs url address here or delete]
+
+## Information about this replication project
+* Replication project based on paper [add full citation here and link to its published online version]
+* Replication method (select one from below):
+  + Used replication package available at [add citation + repository link here]
+  + Used materials obtained from authors
+  + Own replication following methods section of the paper
+  + Other - explain
+
+## Workspace setup {.tabset .tabset-pills}
+
+### YAML settings
+
+ output: </br>
+  &nbsp; html_document: </br>
+    &nbsp;&nbsp; code_download: true </br>
+    &nbsp;&nbsp;&nbsp; toc: true </br>
+    &nbsp;&nbsp;&nbsp; toc_depth: 2 </br>
+    &nbsp;&nbsp;&nbsp; toc_float: </br>
+      &nbsp;&nbsp;&nbsp;&nbsp; collapsed: false </br>
+      &nbsp;&nbsp;&nbsp;&nbsp; smooth_scroll: true </br>
+
+### Global settings of R chunks
+
+```{r setup, include=TRUE}
+# Global options
+opts_chunk$set(echo=TRUE,
+	             cache=TRUE,
+               comment=NA,
+               message=FALSE,
+               warning=FALSE)
+```
+
+### Libraries
+
+```{r libraries, include=TRUE}
+# All used libraries
+library("rmarkdown")
+library("knitr")
+```
+
+### Versions of used packages
+
+```{r versions, echo=FALSE}
+# Versions of used packages
+packages <- c("rmarkdown", "knitr")
+names(packages) <- packages
+lapply(packages, packageVersion)
+```
+
+### My enviroment
+
+```{r myR, echo=FALSE}
+# What is my R version?
+version[['version.string']]
+```
+
+## 1. Introduction
+
+*Code and outputs are not included in the wordcount*
+
+**500 words**
+
+Critical and evidence-based reflections on the paper and your new research question(s). 
+
+* Clearly state which claim (finding/argument) from the replicated paper you discuss or test robustness of any methodological assumptions. 
+* What the authors argued, and what could be counter-argued, and why.
+* Use at least 5 scientific references to support your critique and your idea for research extension. 
+
+Refer to the four types of replications as discussed in Freese and Peterson (2017) and explain what aspects of the original research your replication tests.
+
+Briefly summarise, what results you expected to find and preregistered.
+
+
+## 2. Data and methods
+
+### 2.1. Data
+
+**250 words**
+
+Transparently __describe data__ used in the original paper and in your replication project: full dataset names, years of data collection, sources (who created data), sample sizes, variables used in the model you replicate.
+
+Embed R code to upload your data (recommendation - show code only using `results='hide'` in the chunk options). 
+
+Remember to add all datasets with their doi number to the list of references. See examples in the conditions of use for the ESS data [here](https://www.europeansocialsurvey.org/data/conditions_of_use.html).
+
+Report all steps you have undertaken in __data transformation__:
+
+* Subsetting data by selecting a lower number of variables or excluding any cases.
+* Merging data files.
+* Steps in recoding and renaming all variables. 
+* Embed R code below to present the steps in data manipulation. If this would be very long chunk of R code (over 1 page), show just some examples and hide the rest of the code in text (`include=FALSE` option). The entire code will be still displayed in Appendix 2. 
+
+You __have to__ display some summary statistics of your key variables of interest. This could be done as a table/s or a graph/s presenting distribution of your dependent variable/s for the entire sample or by a group of interest, boxplots, correlation plots or graphs with means values.
+
+
+### 2.2. Methods
+
+**250 words**
+
+Describe what methods were used in the original paper and what methods you used and why. 
+
+Support any changes you made in the analytical strategy with literature and/or displaying any relevant data diagnostics. 
+
+If suitable, embed statistical tests comparing model fit of both methods.
+
+
+## 3. Results
+
+**500 words**
+
+Display and describe your research results.
+
+Show R code and professionally looking outputs, e.g. tables prepared in `tab_model` or `stargazer` functions, or graphs as `coefplots` or predicted values.
+
+Provide in-depth discussion and interpretation of your results.
+
+
+## 4. Conclusions
+
+**250 words**
+
+Discuss you findings in the light of literature you introduced in the introduction.
+
+Reflect why your results are similar/different from the original study. 
+
+
+## References
+
+**min. 5 scientific references, excluding the replicated paper**
+
+Freese, J., & Peterson, D. (2017). Replication in social science. *Annual Review of Sociology*, 43, 147-165, [doi: 10.1146](https://www.annualreviews.org/doi/abs/10.1146/annurev-soc-060116-053450).
+
+## Appendix
+
+### Appendix 1. My enviroment (full information) 
+
+```{r session}
+# Detailed information about my environment
+sessionInfo()
+```
+
+### Appendix 2. Entire R code used in the project
+
+```{r ref.label=knitr::all_labels(), echo=TRUE, eval=FALSE}
+```
